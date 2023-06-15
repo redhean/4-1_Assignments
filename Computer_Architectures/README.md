@@ -1,1 +1,1 @@
-#SKKU_4-1/Computer_Architectures
+# SKKU_4-1 Computer_Architectures
