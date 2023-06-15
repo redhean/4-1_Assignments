@@ -13,7 +13,7 @@ add, sub, addi
 
 xor, or, and, xori, ori, andi
 
-slli, srli, srai, sll, srl, sra  
+slli, srli, srai, sll, srl, sra
 
 slti, slt
 
