@@ -3,7 +3,7 @@
 You can execute this python file with no other setting.
 
 This python file separately in 3 parts.
-In the first part, I solve the "Task 1" to get 1,00 most frequently appeared words. And in the same time I train the Naive Bayes Classifier.
+In the first part, I solve the "Task 1" to get 1,000 most frequently appeared words. And in the same time I train the Naive Bayes Classifier.
 
 In the second part, I test my Naive Bayes Classifier also using Laplace Smoothing.
 
