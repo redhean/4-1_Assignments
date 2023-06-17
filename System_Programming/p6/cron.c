@@ -46,21 +46,9 @@ int main(void) {
 	t = time(NULL);
 	localtime_r(&t, &tm);
 
-
-
-
 	while (1)
 	{
 		buf[0] = '\0';	
-
-		//insert your code
-
-		//##  hints  ##
-
-		//strtok_r();
-		//pid = fork();
-		//execl("/bin/sh", "/bin/sh", "-c", argv[2], (char*) NULL);
-
 		
 		read(fd, buf, 512);
 
