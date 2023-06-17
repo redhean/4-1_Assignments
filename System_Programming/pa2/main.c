@@ -268,7 +268,6 @@ int main(){
                                                 if(execvp(path, tokens[i - 1]) == -1){
                                                         exit(1);
                                                 }
-
                                         }
 				}
 				else{
@@ -322,7 +321,6 @@ int main(){
                                 num_args = 0;
                         }
 		
-			
 			// check
 			
 			int chk1 = 0;
@@ -342,7 +340,6 @@ int main(){
 				write(2, error_message_1, strlen(error_message_1));
 				continue;
 			}
-
 
 			for(int i = 0; i <= num_pipes; i++){
 				if(pipe(fd) == -1)
@@ -412,7 +409,6 @@ int main(){
                                         	if(execvp(path, tokens[i - 1]) == -1){
                                                 	exit(1);
                                         	}
-
 					}
 				}
 				else{	
@@ -509,8 +505,7 @@ int main(){
 							dup2(fd[1], 1);
 							close(fd[0]);
 							close(fd[1]);
-						}
-					                       
+						}                
                                         }
 
                                         if(strcmp(tokens[i][0], "head") == 0 || strcmp(tokens[i][0] , "tail") == 0 || strcmp(tokens[i][0], "bc") == 0
@@ -581,7 +576,6 @@ int main(){
 				continue;
                         }
 
-
 			for(int i = 0; i < num_pipes; i++){
 				if(pipe(fd) == -1)
 					exit(1);
@@ -617,17 +611,13 @@ int main(){
 					if(execvp(path, tokens[i]) == -1){
 						exit(1);
 					}
-
 				}
 				else{
 					close(fd[1]);
 					prev_read = fd[0];
-				}
-						
+				}		
 			}
-			
-			while(wait(&child_status) > 0);
-                           
+			while(wait(&child_status) > 0);      
 		}
 		// < & >> Redirection
 		else if(strchr(cmd, '<') != NULL && strstr(cmd, ">>") != NULL){
@@ -641,7 +631,6 @@ int main(){
                                 	chk1 = 1;
                         }
                         
-
                         if(chk1 == 0){
                                 write(2, error_message_1, strlen(error_message_1));
                                 continue;
@@ -874,7 +863,6 @@ int main(){
 				else{
 					wait(&child_status);
 				}
-
 			}
 			else{
 				sprintf(path, "/bin/%s", arg[0]);
@@ -908,7 +896,6 @@ int main(){
 				}
 			}
 		}
-		
 	}
 	return 0;
 }
