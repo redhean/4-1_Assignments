@@ -25,7 +25,6 @@ int main() {
         }
 
         /* separate command name and options */
-        /* ---------your code here---------- */
 	cmd[strlen(cmd) - 1] = '\0';
 	char** command = (char**)malloc(sizeof(char*) * 16);
 	for(int i = 0; i < 10000; i++){
@@ -44,8 +43,6 @@ int main() {
 	sprintf(path, "/bin/%s", command[0]);
 
         /* execute command using fork()
-           you only need to use fork() once! */
-        /* ---------your code here---------- */
 	pid_t pid = fork();
 
 	if(pid == 0) {
