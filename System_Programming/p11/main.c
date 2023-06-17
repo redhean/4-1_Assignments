@@ -21,11 +21,8 @@ void *thread(void *arg){
 		result[idx] = result_value;
 	}
 
-	pthread_exit(NULL);
-	
-		
+	pthread_exit(NULL);	
 }
-
 
 int main(int argc, char* argv[]){
 		
@@ -81,5 +78,4 @@ int main(int argc, char* argv[]){
 		printf("[ %d ]\n", result[i]);
 	}
 	return 0;
-
 }
