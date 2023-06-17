@@ -1,1 +1,1 @@
-#SKKU_4-1/Algorithms
+# SKKU_4-1 Algorithms
