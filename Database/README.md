@@ -1,1 +1,1 @@
-#SKKU_4-1/Database
+# SKKU_4-1 Database
