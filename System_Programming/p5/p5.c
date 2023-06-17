@@ -42,7 +42,7 @@ int main() {
 	command[i] = NULL;
 	sprintf(path, "/bin/%s", command[0]);
 
-        /* execute command using fork()
+        /* execute command using fork()*/
 	pid_t pid = fork();
 
 	if(pid == 0) {
