@@ -84,18 +84,15 @@ int main(int argc, char* argv[]){
 						cnt = 0;
 						line++;
 					}
-
 					start = 0;
 					middle = 0;
 					end = 0;
-
 				}
 				else{
 					to_lower(alphabet);
 					temp[cnt] = alphabet[0];
 					cnt++;
 				}
-
 			}
 		}
 		// Searching several consecutive words locations
@@ -148,7 +145,6 @@ int main(int argc, char* argv[]){
 									cnt_word = 1;
 								}
 							}
-
 						}
 					}
 					
@@ -184,11 +180,8 @@ int main(int argc, char* argv[]){
 									cnt_word = 1;
 								}
 							}
-						}
-								
+						}		
 					}
-					
-
 					int temp_chk = 0;
 					for(int i = 0; i < count; i++){
 						if(chk[i] != 0) temp_chk++;
@@ -213,24 +206,20 @@ int main(int argc, char* argv[]){
 						start = 0;
 					}
 					else{
-
 						my_memset(temp, 0, sizeof(char) * 512);
 						my_memset(chk, 0, sizeof(char) * count);
 						cnt = 0; 
 						location = 0;
 						start = 0;
 					}
-
 					line++;
-
 				}
 				else{
 					to_lower(alphabet);
 					temp[cnt] = alphabet[0];
 					cnt++;
 					location++;
-				}							
-					
+				}								
 			}
 		}
 		// Searching several words locations
@@ -254,7 +243,7 @@ int main(int argc, char* argv[]){
 							chk[i] = 1;
 						}
 					}
-
+					
 					my_memset(temp, 0, sizeof(char) * 512);
 					cnt = 0;
 				}
@@ -266,7 +255,7 @@ int main(int argc, char* argv[]){
 							chk[i] = 1;
 						}
 					}
-
+					
 					int temp_chk = 0;
 					for(int i = 0; i < count; i++){
 						if(chk[i] != 0) temp_chk++;
@@ -293,9 +282,7 @@ int main(int argc, char* argv[]){
 					temp[cnt] = alphabet[0];
 					cnt++;	
 				}	
-
 			}
-
 		}
 		// Searching single word locations
 		else{
@@ -356,19 +343,13 @@ int main(int argc, char* argv[]){
 					cnt++;
 					location++;
 				}
-
 			}
-
 		}
-		
 		// move to front
 		lseek(fd1, 0, SEEK_SET);		
 
-
 		write(1, ans, my_strlen(ans));
 		write(1, "\n", 1);
-
 	}	
-
 	return 0;
 }
