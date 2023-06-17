@@ -9,7 +9,6 @@ pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 
 void *montecarlo(void *arg) {
     double x, y;
-    /* your code here */
     unsigned int seed = (unsigned int)(long)arg;
 
     for(int i = 0; i < points; i++){
