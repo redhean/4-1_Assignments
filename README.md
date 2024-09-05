@@ -1,2 +1,2 @@
-# SKKU_4-1
-SKKU SW 4-1 Programming Assignment 
+# 4-1_Assignments
+SW 4-1 Programming Assignment 
